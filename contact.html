@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LandCruiser-Hub | Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+ <header>
+     <nav class="main-nav">
+        <div class="container">
+            <div class="main-nav">
+                <a href="index.html" class="logo">
+                    <img src="landcruiser hub logo.png" alt="landcruiser hub logo" width="180">
+                
+    <div class="container">
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="models.html">Models</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="tips & maintenance.html"> Tips & Maintenance</a></li>
+        </ul>
+      </nav>
+    </div>
+                </a>
+            </div>
+        </div>
+     </nav>
+ </header>
+        
+
+
+  <!-- Contact Section -->
+  <main>
+    <section id="contact" class="content-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p> Have questions, suggestions or feedback?We’d love to hear from you, our team is always ready to assist you!!.</p>
+
+        <h1>Our Contact Information</h1>
+        <p><strong>Email</strong>:<a href="mailto:support@landcruiserhub.com">wangukudziila@gmil.com</a></p>
+        <p><strong>Phone</strong>: (267) 72149273</p>
+        <p><strong>Telephone</strong>:(267) 3951736</p> 
+        
+
+
+        <!-- Contact Form -->
+      <form action="#" method="post">
+    <label for="name">Name *</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject">
+
+    <label for="reason">Reason for Contact</label>
+    <select id="reason" name="reason">
+      <option value="general">General Inquiry</option>
+      <option value="suggestion">Content Suggestion</option>
+      <option value="collaboration">Collaboration</option>
+      <option value="issue">Report Issue</option>
+    </select>
+        <label for="message">Message *</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+        <section>
+            <h3>Need Answers Fast?</h3>
+            <p>Check out our <a href="faq.html">FAQ page</a> for answers to common questions.</p>
+
+
+
+          <p> Community Reviews or User Stories COMING SOON!!</p>
+        </section>
+        <section>
+           
+           
+
+  </form>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 LandCruiser-Hub. All rights reserved.</p>
+      <p>This site is not affiliated with Toyota Motor Corporation.</p>
+    </div>
+  </footer>
+</body>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent form from submitting right away
+
+      // Get input values
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const reason = document.getElementById('reason').value;
+      const message = document.getElementById('message').value.trim();
+
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/i;
+
+      // Validation
+      if (!name || !email || !message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      if (!email.match(emailPattern)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      // Simulate form submission (e.g., send to server or external service)
+      alert('Thank you! Your message has been received.');
+
+      // Optional: Reset the form
+      form.reset();
+    });
+  });
+</script>
