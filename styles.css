@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.welcome-message {
+  font-family: 'Orbitron', sans-serif;
+}
 
 body {
   font-family: Arial, sans-serif;
